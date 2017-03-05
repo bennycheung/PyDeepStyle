@@ -7,6 +7,7 @@ We shall try to run an algorithm for combining the content of one image with the
 ![Sample Artistic Style Transfer Algorithm](images/Sample_robotdreams_TransverseLine.png)
 
 The full installation instruction (on Windows 10) can follow the Blog post at:
+
 <http://bennycheung.github.io/deep-learning-on-windows-10>
 
 ## deepstyle.py

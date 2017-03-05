@@ -11,7 +11,7 @@ The full installation instruction (on Windows 10) can follow the Blog post at:
 <http://bennycheung.github.io/deep-learning-on-windows-10>
 
 ## deepstyle.py
-The python script is `deepstyle.py` is the Keras implementation of the neural style transfer algorithm, using a pre-trained convolutional neural network (VGG16).
+The python script `deepstyle.py` is the Keras implementation of the neural style transfer algorithm, using a pre-trained convolutional neural network (VGG16).
 The `run.sh` bash script takes your input {content_image}, {style_image} and {output_directory} for generating the results.
 
 ```bash

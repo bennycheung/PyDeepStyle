@@ -33,7 +33,7 @@ Most of the style seems to be converged after 25 epoch. You can try a higher num
 
 For reader's convenience, the script input parameters are repeated here:
 
-* *--image_size* : Allows to set the Gram Matrix size. Default is 400 x 400, since it produces good results fast.
+* *--image_size* : Allows to set the Gram Matrix size. Default is 400 (width), since it produces good results fast.
 * *--iter* : Number of iterations. Default is 10. Test the output with 10 iterations, and increase to improve results.
 * *--tv_weight* : Regularization factor. Smaller values tend to produce crisp images, but 0 is not useful. Default = 1E-5
 * *--content_layer* : Selects the content layer. Paper suggests block4_conv2, but better results can be obtained from block5_conv2. Default is block5_conv2.

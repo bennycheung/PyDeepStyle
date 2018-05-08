@@ -8,16 +8,11 @@ if [ "$#" -ne 3 ]; then
   exit
 fi
 
-IMAGE_PATH=images
+mkdir -p $3
 
-mkdir -p ${IMAGE_PATH}/$3
-
-python deepstyle.py "${IMAGE_PATH}/$1" "${IMAGE_PATH}/$2" "${IMAGE_PATH}/$3/$3" \
-  --image 600 \
-  --content_weight 0.025 --style_weight 1.0 \
-  --total_variation_weight 8.5E-05 --style_scale 1 \
-  --num_iter 25 --rescale_image "False" --rescale_method "bicubic" \
-  --maintain_aspect_ratio "True" --content_layer "conv5_2" \
-  --init_image "content" --pool_type "max" \
-  --preserve_color "False" --min_improvement 0 --model "vgg16" --content_loss_type 0
-
+python neural_style_transfer.py "$1" "$2" "$3/$3" \
+  --image_size 600 \
+  --tv_weight 8.5E-05 \
+  --iter 25 \
+  --content_layer "block5_conv2" \
+  --min_improvement 0

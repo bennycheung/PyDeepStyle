@@ -10,7 +10,7 @@ fi
 
 mkdir -p $3
 
-python neural_style_transfer.py "$1" "$2" "$3/$3" \
+python deepstyle.py "$1" "$2" "$3/$3" \
   --image_size 600 \
   --tv_weight 8.5E-05 \
   --iter 25 \

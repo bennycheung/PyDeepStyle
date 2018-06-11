@@ -35,6 +35,8 @@ For reader's convenience, the script input parameters are repeated here:
 
 * *--image_size* : Allows to set the Gram Matrix size. Default is 400 (width), since it produces good results fast.
 * *--iter* : Number of iterations. Default is 10. Test the output with 10 iterations, and increase to improve results.
+* *--content_weight: The weight given to the content loss (Default is 0.025)
+* *--style_weight: The weight given to the style loss (Default is 1.0)
 * *--tv_weight* : Regularization factor. Smaller values tend to produce crisp images, but 0 is not useful. Default = 1E-5
 * *--content_layer* : Selects the content layer. Paper suggests block4_conv2, but better results can be obtained from block5_conv2. Default is block5_conv2.
 * *--min_improvement* : Defines minimum improvement required to continue script. Default is 0.0
